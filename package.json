@@ -1,0 +1,32 @@
+{
+  "name": "yunk-music",
+  "version": "1.0.0",
+  "description": "Music app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "org.truzme.yunkmusic",
+    "productName": "Yunk Music",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "author": "Truzme_",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.1.1",
+    "electron-builder": "^25.1.8"
+  }
+}
