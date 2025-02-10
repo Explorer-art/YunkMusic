@@ -156,10 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Ошибка:', error);
     });
 
-    document.querySelector('.logo').addEventListener('click', () => {
-        window.location.href = '/';
-    });
-
     function getAuthHeader() {
         const token = localStorage.getItem('user_access_token');
         return token ? token : '';
